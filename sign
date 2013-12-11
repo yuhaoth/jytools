@@ -1,0 +1,3 @@
+nvsign(){
+    bash ~/pkc/$TARGET_PRODUCT/nvsign ~/pkc/$TARGET_PRODUCT/rsa_priv.txt
+}
