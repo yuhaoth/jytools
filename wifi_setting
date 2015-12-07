@@ -1,7 +1,0 @@
-network={
-        ssid="NV_VISITOR"
-        psk="gr1d15h3r3"
-        key_mgmt=WPA-PSK
-        priority=1
-}
-
