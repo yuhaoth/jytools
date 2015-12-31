@@ -18,3 +18,12 @@ $(LD_PRELOAD_32):
 	make -C $(STDERR_CODE) 32
 $(LD_PRELOAD_64):
 	make -C $(STDERR_CODE) 64
+install: install-i386-linux-gnu install-x86_64-linux-gnu
+
+install-i386-linux-gnu : test_32
+	@mkdir -p $(HOME)/lib/$(@:install-%=%)
+	@cp $(LD_PRELOAD_32) $(HOME)/lib/$(@:install-%=%)
+install-x86_64-linux-gnu : test_64
+	@mkdir -p $(HOME)/lib/$(@:install-%=%)
+	@cp $(LD_PRELOAD_64) $(HOME)/lib/$(@:install-%=%)
+
