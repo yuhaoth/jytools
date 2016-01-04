@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+alias ls='ls --color'
+alias wget='wget -c'
+alias grep='grep --color'

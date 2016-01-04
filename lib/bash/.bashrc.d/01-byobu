@@ -1,0 +1,10 @@
+function byobu-env-update
+{
+    if [ -n "$VARS_TO_UPDATE" ]
+    then
+        source /usr/bin/byobu-reconnect-sockets
+    fi
+    VARS_TO_UPDATE+=" SSH_CONNECTION SSH_CLIENT"
+    # only support tmux now
+    tmux_update
+}
