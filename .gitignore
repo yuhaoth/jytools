@@ -88,4 +88,8 @@ GTAGS
 
 *.orig
 *~
+*.so
+*.pyc
+*.out
+*.elf
 \#*#
