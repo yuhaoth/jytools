@@ -2,7 +2,7 @@
 #And make 4.1 support this feature
 .ONESHELL:
 all:test
-	T=333
+	T=
 	if [ -z $$T ]	
 	then 	
 		echo EMPYT $@ T=$$T $$$$ 	
