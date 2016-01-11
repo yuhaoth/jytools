@@ -46,7 +46,8 @@
 #
 !.gitignore
 !.mailmap
-
+#bash utils to white list
+!/lib/bash/.*
 #
 # Generated files
 #
