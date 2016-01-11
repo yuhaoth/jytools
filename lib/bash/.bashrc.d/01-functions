@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+PATH=$HOME/bin:$PATH
+function _path_clean(){
+    python - <<END
+import os
+
+path=os.getenv("PATH").split(':')
+new_path=[]
+for i in path:
+    if i not in new_path:
+        if os.path.exists(i):
+            new_path.append(i)
+print ':'.join(new_path)
+END
+}
+function path_clean(){
+    PATH=$(_path_clean)
+    export PATH
+}
+path_clean
