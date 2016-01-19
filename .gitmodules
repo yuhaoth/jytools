@@ -4,3 +4,6 @@
 [submodule "3rd-party/stderred"]
 	path = 3rd-party/stderred
 	url = git@github.com:sickill/stderred.git
+[submodule "3rd-party/pyserial"]
+	path = 3rd-party/pyserial
+	url = git@github.com:pyserial/pyserial.git
