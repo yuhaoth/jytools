@@ -7,3 +7,9 @@
 [submodule "3rd-party/pyserial"]
 	path = 3rd-party/pyserial
 	url = git@github.com:pyserial/pyserial.git
+[submodule "3rd-party/geany/geany"]
+	path = 3rd-party/geany/geany
+	url = git@github.com:geany/geany.git
+[submodule "3rd-party/geany/geany-plugins"]
+	path = 3rd-party/geany/geany-plugins
+	url = git@github.com:geany/geany-plugins.git
