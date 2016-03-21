@@ -13,5 +13,6 @@ geany-plugins: geany
 	&& $(MAKE) && $(MAKE) install
 geany:
 	cd $@ && ./autogen.sh --disable-html-docs --prefix=$(PREFIX) \
+        --enable-vte \
 	&& $(MAKE) && $(MAKE) install
 
