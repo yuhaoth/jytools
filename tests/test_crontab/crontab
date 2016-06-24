@@ -1,0 +1,6 @@
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+#分钟<space>hour<space>day of month<space>month<space>day of week<space>user<space>command
+*/2 * * * *  date >/tmp/test.sh
+
