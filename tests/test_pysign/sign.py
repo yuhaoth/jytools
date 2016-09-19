@@ -99,3 +99,17 @@ def generateKey():
 
 print generateKey()
 
+key=RSA.generate(2048)
+print dir(key)
+print key.key
+print type(key.key)
+print dir(key.key)
+#~ print key.keydata
+#~ print key.key.n
+for i in key.keydata:
+    print i,"=",getattr(key,i)
+
+print '='*20
+pub=key.publickey()
+for i in ("n","e"):
+    print i,"=",hex(getattr(pub,i))
