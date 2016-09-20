@@ -93,4 +93,6 @@ GTAGS
 *.pyc
 *.out
 *.elf
+*.bak
+
 \#*#
